@@ -1,0 +1,90 @@
+@import "vars"
+@import "app/css/fonts"
+@import "../../node_modules/normalize.css/normalize"
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid"
+
+
+
+.qr-code-card
+    width: 341px
+    height: 190px
+    border: 2px dashed #b3b3b3
+    margin: 50px auto
+    padding: 2px
+    font-family: $main-font
+    color: $white
+    display: flex
+    
+    .content
+        width: 60%
+        background: #f56815
+        height: 100%
+        padding: 10px
+        position: relative
+        h2
+            display: inline-block
+            text-align: center
+            font-size: 10px
+            position: absolute
+            top: 10px
+            right: 30px
+
+        .logo
+            width: 50px
+            height: 42px
+            background: url(../img/logo_1.png) no-repeat center
+            display: inline-block
+            
+            background-size: contain
+
+        .id-block, .login-block
+            text-align: center
+            padding: 10px
+            span:first-child 
+                font-size: 14px
+                margin-right: 10px
+            span:last-child 
+                font-size: 20px
+        .barcode
+            position: absolute
+            bottom: -5px
+            left: 5px
+            width: 80px
+            img
+                width: 100%
+                z-index: 10000
+
+        .tel
+            position: relative
+            right: -90px
+            bottom: 0
+            width: 90px
+            span
+                &:first-child
+                    font-size: 8px
+                    display: inline-block
+                &:last-child
+                    font-size: 12px
+                    display: inline-block
+                    position: relative
+                    right: -10px
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 10px
+                        top: 0px
+                        left: -14px
+                        background: url(../img/qr-tel.png) no-repeat center
+                        background-size: contain
+                
+    .qr-code
+        position: relative
+        width: 40%
+        height: 100%
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 80%

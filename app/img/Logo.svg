@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'CeraRoundPro-Bold';}
+	.st3{font-size:287.8881px;}
+	.st4{font-size:307.9803px;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<rect x="691.5" y="117.5" class="st0" width="750" height="750"/>
+<g>
+	<g>
+		<path class="st1" d="M1394.1,208H738.4c-3.7,0-6.7,4.4-6.7,9.8v39.3c0,8.6,7.2,13.1,11.4,7c10.1-14.4,24.1-23.3,39.4-23.3h213.3
+			c3.6,0,7.2-1,10.1-3c13.9-9.5,35.7-15.6,60.3-15.6s46.4,6.1,60.3,15.6c3,2,6.5,3,10.1,3h212.8c15.6,0,29.6,9.1,39.8,23.8
+			c4.3,6.2,11.5,1.8,11.5-6.9v-40C1400.9,212.4,1397.8,208,1394.1,208z"/>
+	</g>
+	<g>
+		<path class="st1" d="M738.4,521.6h655.7c3.7,0,6.7-4.4,6.7-9.8v-39.3c0-8.6-7.2-13.1-11.4-7c-10.1,14.4-24.1,23.3-39.4,23.3
+			h-213.3c-3.6,0-7.2,1-10.1,3c-13.9,9.5-35.7,15.6-60.3,15.6c-24.6,0-46.4-6.1-60.3-15.6c-3-2-6.5-3-10.1-3H783
+			c-15.6,0-29.6-9.1-39.8-23.8c-4.3-6.2-11.5-1.8-11.5,6.9v40C731.7,517.3,734.7,521.6,738.4,521.6z"/>
+	</g>
+</g>
+<polygon class="st0" points="956.8,428.4 961.6,428.4 961.6,428.4 956.8,428.4 "/>
+<polygon class="st0" points="920.8,663.6 923.7,663.6 923.7,663.6 920.8,663.6 "/>
+<text transform="matrix(1 0 0 1 774.0908 458.4282)" class="st1 st2 st3">BON</text>
+<text transform="matrix(1 0 0 1 725.1509 781.7412)" class="st1 st2 st4">CITY</text>
+<path class="st5" d="M1394.6,535H738.4c-11.8,0-21.4-9.6-21.4-21.4V214.4c0-11.8,9.6-21.4,21.4-21.4h656.2
+	c11.8,0,21.4,9.6,21.4,21.4v299.2C1416,525.4,1406.4,535,1394.6,535z"/>
+</svg>
