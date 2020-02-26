@@ -1,6 +1,10 @@
+.scrollbar-thumb{
+  background: #FCA53F !important;
+}
+
 
 .header {
-  background:  url(../img/svg_bg/header-bg-1.svg) no-repeat;
+  background:  url(../img/svg_bg/header-bg.svg) no-repeat;
   background-position: center bottom;
   background-size: cover;
   z-index: 200;
@@ -110,6 +114,7 @@
   margin-bottom: 0;
   color: #222;
 }
+/*
 .partnersCoords .container .city-select label:after,
 .partnersCoords .container .category-select label:after {
   content: '';
@@ -122,6 +127,7 @@
   top: 8px;
   right: -18px;
 }
+*/
 .partnersCoords .container .city-select select,
 .partnersCoords .container .category-select select {
   
@@ -204,6 +210,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 20px;
+  max-height: 600px;
+  overflow-y: scroll;
   
 }
 .partnersCoords .partnersCoords__content-table .partnersCoords__table-row,
@@ -252,7 +260,7 @@
 .partnersCoords .partnersCoords__content-table .partnersCoords__table-row .partnersCoords__table-logo img,
 .partnersCoords .partnersCoords__content-table .partnersCoords__table-row:first-child .partnersCoords__table-logo img,
 .partnersCoords .partnersCoords__content-table .partnersCoords__table-row:last-child .partnersCoords__table-logo img {
-  width: 132px;
+  width: 60px;
   height: auto;
 }
 .partnersCoords .partnersCoords__content-table .partnersCoords__table-row .partnersCoords__table-logo span,
@@ -694,7 +702,7 @@
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -756,8 +764,8 @@
   padding-left: 8px;
 }
 .partnersCoords .partnersCoords__content-cards .partnersCoords__slidePart .card-left img {
-  width: 88px;
-  height: 23px;
+  width: 64px;
+  height: 64px;
 }
 .partnersCoords .partnersCoords__content-cards .partnersCoords__slidePart .card-left .card-partner {
   color: #b7b7b7;
@@ -819,7 +827,7 @@
   line-height: 6px;
 }
 .partnersCoords .partnersCoords__content-cards .partnersCoords__slidePart .card-left .cashback {
-  margin: 10px 0 18px 0;
+  margin: 10px 0 8px 0;
   width: 70px;
   height: 53px;
   border-radius: 0 0 10px 10px;
@@ -848,7 +856,8 @@
 }
 .partnersCoords .partnersCoords__map {
   /* max-width: 900px;
-  width: 100%; */
+  */
+  width: 100%;
   height: 630px;
   padding: 3px;
   background-color: #fff;
@@ -1352,46 +1361,13 @@ iframe {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1365px){
+.partnersCoords .partnersCoords__content-table .partnersCoords__table-row .partnersCoords__table-more,
+.partnersCoords .partnersCoords__content-table .partnersCoords__table-row:first-child .partnersCoords__table-more,
+.partnersCoords .partnersCoords__content-table .partnersCoords__table-row:last-child .partnersCoords__table-more {
+    padding: 50px;
+  }
+}
 
 @media all and (max-width: 1300px) {
   .header .hint-pa {

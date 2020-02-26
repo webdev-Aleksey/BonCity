@@ -23,11 +23,15 @@ button, input
 	&:active
 		outline: none
 
-
+.my-scrollbar
+	overflow: auto
+	width: 100%
+	height: 100%
 body
 	font-family: $main-font
 	color: $black
 	overflow-x: hidden
+	
 
 // h1, h2, h3, span, p
 //     letter-spacing: 0.06em
@@ -250,6 +254,19 @@ input::-webkit-inner-spin-button
 	background: url(../img/playmarket-black.png) no-repeat center
 	background-size: contain
 
+.input-white-bg
+	background: #fff
+	border: 1px solid #FCA53F
+	border-radius: 10px
+	min-width: 60%
+	padding: 0.5em
+
+.input-color-bg
+	background: #fff
+	border: none
+	min-width: 60%
+	padding: 0.5em
+	border-radius: 10px
 
 .underline
 
@@ -322,7 +339,17 @@ input::-webkit-inner-spin-button
 		transition: 1s
 		opacity: .7
 
-
+.not-true
+	padding: 0.5em
+	border-radius: 1em
+	border: 1px solid $red
+	display: inline-block
+	color: $red
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	white-space: nowrap
+	display: none
 
 .up-button
 	width: 50px
@@ -371,19 +398,26 @@ input::-webkit-inner-spin-button
 	min-height: 200px
 
 	.logo
-		// width: 95px
-		// height: 79px
-		// background: url(../img/logo.png) no-repeat center
-		background: url(../img/logo-5.png) no-repeat center
+		width: 95px
+		height: 79px
+		background: url(../img/logo.png) no-repeat center
 		display: inline-block
-		margin-right: 25px
+		margin-right: 75px
 		background-size: contain
-		// background-size: 210%
-		width: 105px
-		height: 85px
-		opacity: .8
-
 		margin-top: 15px
+		position: relative
+		
+		&:before
+			z-index: -1
+			content: ''
+			width: 100%
+			height: 100%
+			background: url(../img/logo-before.svg) no-repeat center
+			background-size: contain
+			position: absolute
+			top: -3px
+			left: 0px
+			transform: scale(1.7)
 
 	.tel-icon
 		position: absolute
@@ -556,7 +590,7 @@ input::-webkit-inner-spin-button
 					background: $reg-color
 				&:nth-child(2)
 					background: $enter-color
-					margin-left: 15px
+					
 
 				svg
 					width: 30px
@@ -962,9 +996,6 @@ a[data-tooltip][data-position="bottom"]:after
 
 	.tab-d-none
 		display: none
-
-
-
 
 @media (max-width: 768px)
 	.mob-center

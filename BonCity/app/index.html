@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html  lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
     
     <title>БонСити</title>
 </head>
 
-<body>
+<body >
     
 
     <header class="header">
@@ -35,7 +37,7 @@
 
             <ul>
                 <li><a href="" class="mob-nav_item">О нас</a></li>
-                <li><a href="#saving" class="mob-nav_item">Калькулятор</a></li>
+                <li><a href="#saving" class="internal_link mob-nav_item">Калькулятор</a></li>
                 <li><a href="catalog.html" class="mob-nav_item">Партнёры</a></li>
                 <li><a href="" class="mob-nav_item">Акции</a></li>
                 <li><a href="" class="mob-nav_item">Новости</a></li>
@@ -78,7 +80,7 @@
                     <nav class="nav d-lg-block" id="nav" style="display: none;">
                         <ul>
                             <li><a href="" class="underline nav-item">О нас</a></li>
-                            <li><a href="#saving" class=" underline nav-item">Калькулятор</a></li>
+                            <li><a href="#saving" class="internal_link underline nav-item">Калькулятор</a></li>
                             <li><a href="catalog.html" class="underline nav-item">Партнёры</a></li>
                             <li><a href="" class="underline nav-item">Акции</a></li>
                             <li><a href="" class="underline nav-item">Новости</a></li>
@@ -3053,8 +3055,15 @@
 
 
 
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
+
+    <script src="js/smooth-scrollbar.js">
+    </script>
+
+    
 
     <script src="js/wow.min.js">
     </script>
@@ -3065,6 +3074,17 @@
     <script src="js/main.js">
     </script>
 
+    <script src="js/header.js"></script>
+
+
+    <!-- <script>
+        var Scrollbar = window.Scrollbar;
+    
+        Scrollbar.init(document.querySelector('.my-scrollbar'), {
+            alwaysShowTracks: true
+        });
+    
+    </script> -->
 </body>
 
 </html>

@@ -4972,6 +4972,12 @@ button:active, input:active {
   outline: none;
 }
 
+.my-scrollbar {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "SF UI Display", sans-serif;
   color: #222;
@@ -5255,6 +5261,22 @@ input::-webkit-inner-spin-button {
   background-size: contain;
 }
 
+.input-white-bg {
+  background: #fff;
+  border: 1px solid #FCA53F;
+  border-radius: 10px;
+  min-width: 60%;
+  padding: 0.5em;
+}
+
+.input-color-bg {
+  background: #fff;
+  border: none;
+  min-width: 60%;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
 .underline:before {
   content: '';
   position: absolute;
@@ -5359,6 +5381,21 @@ input::-webkit-inner-spin-button {
   opacity: .7;
 }
 
+.not-true {
+  padding: 0.5em;
+  border-radius: 1em;
+  border: 1px solid #FF0000;
+  display: inline-block;
+  color: #FF0000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+  display: none;
+}
+
 .up-button {
   width: 50px;
   height: 50px;
@@ -5424,14 +5461,29 @@ input::-webkit-inner-spin-button {
 }
 
 .header .logo {
-  background: url(../img/logo-5.png) no-repeat center;
+  width: 95px;
+  height: 79px;
+  background: url(../img/logo.png) no-repeat center;
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 75px;
   background-size: contain;
-  width: 105px;
-  height: 85px;
-  opacity: .8;
   margin-top: 15px;
+  position: relative;
+}
+
+.header .logo:before {
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo-before.svg) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  -webkit-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 .header .tel-icon {
@@ -5580,7 +5632,6 @@ input::-webkit-inner-spin-button {
 
 .header .header-icon .reg-enter a:nth-child(2) {
   background: #37B4EA;
-  margin-left: 15px;
 }
 
 .header .header-icon .reg-enter a svg {

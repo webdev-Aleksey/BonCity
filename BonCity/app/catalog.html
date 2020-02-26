@@ -249,7 +249,7 @@
 					</div>
 
 
-					<div class="partnersCoords__content-table hide">
+					<div id="my-scrollbar" class="partnersCoords__content-table my-scrollbar hide">
 						<div class="partnersCoords__table-row">
 							<div class="partnersCoords__table-logo"><img src="img/partner-logo.png" alt="..."/><span class="table-partner">-Авоська-</span>
 								<div class="rating rating-logo">
@@ -579,7 +579,7 @@
 					</div>
 
 
-					<div class="partnersCoords__content-cards row">
+					<div class="partnersCoords__content-cards  row">
 
 						<div class="partnersCoords__slidePart scrollbar-vert hideOnLg">
 							<div class="card" data-value="https://yandex.ua/map-widget/v1/?um=constructor%3A75a4748e6c96fe0d683bca35e3f26b545e21f0ed26346e8f1dded41136719621&amp;amp;source=constructor">
@@ -1292,16 +1292,28 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 		</script>
 		<script src="js/libs/jquery-ui.min.js"></script>
+		<script src="js/smooth-scrollbar.js"></script>
 		<script>
 			$.widget.bridge('uitooltip', $.ui.tooltip);
 			$(function () {
 				$('[data-toggle="tooltip"]').tooltip()
 			})
+			
+		</script>
+		<script>
+			var Scrollbar = window.Scrollbar;
+		   
+			Scrollbar.init(document.querySelector('.my-scrollbar'), {
+				alwaysShowTracks: true
+			});
+
 		</script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 		<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 		<script src="js/libs/scroll.js"></script>
 		<script src="js/header.js"></script>
+		<script src="js/catalog.js"></script>
+		
 	</body>
 </html>
