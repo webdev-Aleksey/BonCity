@@ -31,12 +31,10 @@ function reload(done){
 // Init BrowserSync.
 function browserSync(done) {
   browsersync.init({
-    server: {
-        baseDir: "./app"
-      }, // Change this value to match your local URL.
-    socket: {
-      domain: 'localhost:3000'
-    }
+    server: { baseDir: "./app" }, // Change this value to match your local URL.
+    socket: { domain: 'localhost:3000'},
+    host: "192.168.0.1"
+    // files: ["app/css/*.css", "app/js/*.js", "app/css/*.css"]
   });
   done();
 }
