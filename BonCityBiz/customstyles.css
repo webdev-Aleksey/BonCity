@@ -1,0 +1,163 @@
+.counter-column {
+    position: relative;
+}
+
+.counter-column .stm-counter {
+    position: absolute;
+    top: 42%;
+    left: 26%;
+}
+
+.hover-block {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.hover-block:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+
+
+
+.footer_social a {
+    width: 28px;
+    height: 29px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+}
+
+.footer_social a:before {
+    display: none;
+}
+
+.footer_social .social-vk {
+    background: url(../2020/02/social-vk.png) no-repeat;
+
+}
+
+.footer_social .social-instagram {
+    background: url(../2020/02/social-instagram.png) no-repeat;
+
+}
+
+.footer_social .social-twitter {
+    background: url(../2020/02/social-twitter.png) no-repeat;
+
+}
+
+.footer_social .social-facebook {
+    background: url(../2020/02/social-facebook.png) no-repeat;
+
+}
+
+.google-play-btn {
+    background: url(../2020/02/google-play-btn.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 108px;
+    height: 36px;
+    display: inline-block;
+}
+
+
+.app-store-btn {
+    background: url(../2020/02/app-store-btn.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 108px;
+    height: 36px;
+    display: inline-block;
+    cursor: default;
+    opacity: 0.5;
+}
+
+.app-store-btn:before,
+.google-play-btn:before {
+    display: none;
+}
+
+.footer-app {
+    white-space: nowrap;
+}
+
+
+.footer-widgets #stm_text-6 .textwidget p,
+.footer-widgets #stm_text-6 .widget-footer-title h4 {
+    text-align: right !important;
+}
+
+.footer-widgets #stm_text-6 .widget-footer-title h4 {
+    padding-right: 30px;
+}
+
+
+.footer-widgets a:hover {
+    text-decoration: none !important;
+}
+
+.footer-widgets a {
+    position: relative;
+}
+
+.footer-widgets a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -2px;
+    left: auto;
+    right: 0;
+    background: #222;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.footer-widgets a:hover:before {
+    width: 100%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    bottom: -2px;
+    left: 0;
+    right: auto;
+}
+
+
+.d-none {
+    display: none !important;
+}
+
+#rev_slider_1_1_forcefullwidth {
+    display: none !important;
+}
+
+.my-header {
+    background-position: right !important;
+}
+
+#my-header {
+    background-position: right !important;
+}
+
+
+
+.green-btn button {
+    background: #479F11 !important;
+    color: #FFF !important;
+    border-radius: 2.5em !important;
+    font-size: 15px !important;
+    font-family: 'Proxima Nova Rg' !important;
+    font-weight: bold !important;
+    padding: 1em 0em !important;
+    width: 215px !important;
+    text-align: center !important;
+
+}
+
+.stm-logo a img {
+    width: 70px !important;
+}
