@@ -1,0 +1,183 @@
+@import 'vars'
+
+
+.support
+    padding: 50px 0px
+
+    
+
+
+    &__item
+        padding: 1em
+        font-size: 18px
+        font-weight: 600
+        outline: none
+        position: relative
+        &.ui-tabs-active
+            background-color: rgba(255, 184, 44, 0.3)
+        a
+            outline: none
+
+    &__content
+        
+        
+    &__aside
+        border: 1px solid #D1D1D1
+        border-radius: 20px
+        overflow: hidden
+
+    .mob-title
+        text-align: center
+        outline: none
+        position: relative
+        cursor: pointer
+        font-size: 20px
+        &::before
+            content: ''
+            position: absolute
+            left: 50%
+            bottom: -25px
+            height: 15px
+            width: 2px
+            background-color: $black
+            transform: rotate(-45deg) translateY(-7px)
+            transition: .3s
+        &::after
+            content: ''
+            position: absolute
+            left: 50%
+            bottom: -25px
+            height: 15px
+            width: 2px
+            background-color: $black
+            transform: rotate(45deg) translateY(-7px)
+            transition: .3s
+
+        &.ui-state-active
+            &::before
+                transform: rotate(-45deg) translateY(7px)
+                transition: .3s
+            &::after
+                transform: rotate(45deg) translateY(7px)
+                transition: .3s
+
+
+
+    .accordion
+
+        &__title
+            cursor: pointer
+            margin: 0px
+            padding: 1em 1em 1em 0.5em
+            outline: none
+            transition: .3s
+            border-bottom: 1px solid #D1D1D1
+            position: relative
+            &::before
+                content: ''
+                width: 23px
+                height: 23px
+                position: absolute
+                top: 40%
+                right: 0px
+                background: url(../img/cross.svg) no-repeat center
+                background-size: contain
+                transition: .3s
+            &.ui-state-active::before
+                transform: rotate(225deg)
+                transition: .3s
+            &:hover
+                transform: translateX(5px)
+                transition: .3s
+
+        
+        &__content
+            padding: 2em 1em
+            
+
+
+
+
+
+
+        
+@media screen and ( max-width: 991px  )
+
+    .support
+
+        &__item
+            width: 50%
+            padding: 1em
+            
+            
+            &.ui-tabs-active
+                background-color: transparent
+                a
+                    color: $orange
+            a
+                height: 100%
+                width: 100%
+                display: inline-block
+
+@media screen and ( max-width: 575px )
+
+    .support
+        .accordion-mob
+            background-color: #FFECAA
+            padding-bottom: 40px
+            padding-top: 35px
+        &__aside
+            border: none 
+            display: none
+            padding-top: 20px
+        &__item
+            width: 90%
+            padding: 1em 0em
+            margin: 0em 1em
+            border-bottom: 1px solid #000
+            
+            a
+                transition: .3s
+                display: inline-block
+                
+            &::before
+                content: ''
+                width: 12px
+                height: 10px
+                position: absolute
+                left: -50px
+                top: 43%
+                background: url(../img/arrow2.svg) no-repeat center
+                background-size: contain
+                transition: .3s
+                
+            &.ui-tabs-active
+                a
+                    transform: translateX(10px)
+                &::before
+                    transform: translateX(40px)
+
+
+        
+        &__content
+            margin-top: 30px
+  
+        .accordion
+
+            &__title
+
+                &::before
+                    width: 15px
+                    height: 15px
+
+@media screen and ( min-width: 576px )
+    .support
+        .mob-title
+            display: none
+
+        &__aside
+           
+            display: flex !important
+        &__item
+            
+        

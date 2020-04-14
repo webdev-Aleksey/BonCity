@@ -75,6 +75,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: #f3f3f3;
 }
 
 /**
@@ -4949,11 +4950,7 @@ html {
     margin-left: auto !important;
   }
 }
-.header {
-  background: url(../../img/svg_bg/header-bg-1.svg) no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-}
+
 
 .signup-signin {
   padding-top: 150px;
@@ -5076,7 +5073,7 @@ html {
 
 .signup-signin .sign-in-container .not-true {
   font-size: 18px;
-  top: 50px;
+  top: 40px;
 }
 
 .signup-signin .sign-in-container h1 {
@@ -5414,4 +5411,14 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 input[type="checkbox"]:checked + label:after {
   opacity: 1;
+}
+
+.register__checkbox___label-a {
+  display: inline !important;
+  margin-bottom: 0px !important;
+}
+
+.register-checkbox {
+  width: 260px;
+  margin: 0 auto;
 }

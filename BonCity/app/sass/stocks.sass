@@ -1,0 +1,488 @@
+@import "vars"
+
+
+
+
+
+.stocks
+	margin-bottom: 50px
+
+	.sorting
+		
+		margin-bottom: 60px
+
+		.my-input
+			display: inline-block
+			
+			height: 48px
+			margin: 7px
+			margin-bottom: 30px
+
+
+			fieldset
+				border: none
+				padding: 0px
+				
+			input
+				line-height: 1em
+				
+			
+		.search
+			width: 100%
+			max-width: 309px
+			position: relative
+			overflow: hidden
+			label	
+				font-weight: 300
+				font-size: 14px
+				color: #6f6f6f
+			&__input
+				font-size: 14px
+				font-weight: 300
+				color: $black
+				padding: 14px
+				padding-right: 30px
+				border: none
+
+				width: 100%
+			&__btn
+				position: absolute
+				top: 50%
+				right: 0px
+				transform: translate(-50%,-50%)
+				background-color: transparent
+				width: 20px
+				height: 20px
+				border: none
+				background: url(../img/search2.svg) no-repeat
+				cursor: pointer
+				opacity: 0.5
+				transition: .3s
+				&:hover
+					
+					transition: .3s
+					opacity: 1
+					
+
+			
+
+
+		.category-select
+			
+
+		.city-select
+
+		.city-select,.category-select
+			width: 182px
+			cursor: pointer
+			
+			position: relative
+			label
+				position: absolute
+				top: -20px
+				left: 50%
+				font-size: 14px
+				opacity: 0.5
+				transform: translateX(-50%)
+				
+
+			
+
+			.ui-selectmenu-button
+				display: inline-block
+				position: relative
+				width: 100%
+				padding: 14px
+				border: none
+				outline: none
+				margin: 0px
+				
+				
+				&:focus,&:hover
+					border: none
+					outline: none
+				&::before
+					content: ""
+					position: absolute
+					top: 45%
+					right: 15px
+					border: 8px solid transparent
+					border-top: 8px solid #C4C4C4 
+					transition: .2s
+					transform-origin: center 25%
+					cursor: pointer
+			
+			.ui-selectmenu-button.ui-selectmenu-button-open::before
+				transform: rotate(180deg)
+				transition: .2s
+				transform-origin: center 25%
+				
+
+
+
+			.ui-selectmenu-text
+				font-weight: 300
+				font-size: 14px
+				color: #6f6f6f
+				position: relative
+
+				
+
+			.ui-icon
+				display: none
+	
+			.ui-selectmenu-button
+				
+				
+					
+		
+		.date
+			width: 100%
+			max-width: 309px
+			height: 48px
+			position: relative
+			&::before
+				content: ''
+				width: 23px
+				height: 23px
+				position: absolute
+				top: 50%
+				left: 20px
+				transform: translateY(-50%)
+				background: url(../img/calendar.svg) no-repeat
+			&::after
+				content: ''
+				position: absolute
+				width: 7px
+				height: 1px
+				background-color: #515151
+				top: 50%
+				right: 50%
+				display: inline-block
+				transform: translate(50%,50%)
+
+			.clear-date
+				position: absolute
+				width: 20px
+				height: 20px
+				display: inline-block
+				left: 50%
+				bottom: -10px
+				background: url(../img/cross.svg) no-repeat center
+				background-size: 50%
+				transform: translateX(-50%) rotate(45deg)
+				border-radius: 50%
+				background-color: $orange
+				cursor: pointer
+				
+
+
+				
+
+
+			fieldset
+				text-align: center
+				
+			&-from,&-to
+				border: none
+				border-bottom: 1px solid rgba(196, 196, 196, 0.5)
+				width: 85px
+				text-align: center
+				margin-top: 15px
+				font-size: 14px
+				cursor: pointer
+				position: relative
+				&::before
+					content: ''
+					width: 10px
+					height: 10px
+					position: absolute
+					top: 0px
+					left: 45%
+					background: url(../img/cross.svg) no-repeat center
+
+				
+				
+			&-from
+				margin-right: 9px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					width: 7px
+					height: 1px
+					background-color: #515151
+					top: 50%
+					right: 0px
+					display: inline-block
+			&-to
+				margin-left: 9px
+			&-submit
+				position: absolute
+				background-color: transparent
+				border: none
+				width: 24px
+				height: 20px
+				top: 50%
+				right: 20px
+				background: url(../img/arrow2.svg) no-repeat
+				transform: translateY(-50%)
+				opacity: 0.7
+				cursor: pointer
+				transition: .2s
+				&:hover
+					opacity: 1
+					transition: .2s
+			fieldset
+			
+
+	.cards-row
+
+		height: 710px
+		overflow: auto
+		box-sizing: border-box
+		.scrollbar-track.scrollbar-track-y
+			border-radius: 50px
+			.scrollbar-thumb
+				background: $orange
+
+		.row
+			margin: 0px
+		
+
+		.card
+			background: #FFF
+			border: 1px solid #FDBA3D
+			box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.17)
+			border-radius: 30px
+			cursor: pointer
+			max-width: 345px
+			min-height: 339px
+			margin: 0 auto
+			margin-bottom: 30px
+			overflow: hidden
+			transition: .3s
+			margin-top: 10px
+			position: relative
+			&:hover
+				
+				transform: translateY(-10px)
+				transition: .3s
+
+			&::before
+				content: ''
+				position: absolute
+				width: 40px
+				height: 48px
+				background: url(../img/flag.svg)
+				top: -8px
+				right: 20px
+				background-size: 100%
+				background-position: center
+				background-color: transparent
+
+			&__tm-title
+				padding: 15px 0px
+				font-size: 14px
+				font-weight: 300
+				text-align: center
+				span
+					font-weight: 600
+				p
+					display: inline-block
+					margin: 0px
+					padding-left: 17px
+			&__tagline
+				font-size: 14px
+				font-weight: 600
+				padding: 15px 50px 15px 50px
+				display: block
+				text-align: center
+				
+			&__date
+				padding: 10px 0px 5px 0px
+				border-bottom: 1px solid #ddd
+				margin: 0 25px
+				
+			&__to,&__from
+				&__title
+					font-size: 10px
+			&__from
+				margin-bottom: 5px
+			&__description p
+				margin: 0px
+				font-size: 14px
+				font-weight: 300
+				padding: 10px 0px
+				border-bottom: 1px solid #ddd
+				margin: 0px 25px
+
+			&__img
+				height: 177px
+				overflow: hidden
+				object-fit: fill 
+				
+				img
+					object-fit: contain
+					width: 340px
+					height: 100%
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-selectmenu-menu
+	min-width: 156px
+	background: #FEFEFE
+	box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.35)
+	border-radius: 12px
+	overflow: hidden
+	display: none
+	max-width: 156px
+	min-width: 200px
+	.ui-state-disabled
+		opacity: 0.5 
+		div
+			font-size: 14px !important
+	&.ui-selectmenu-open
+		display: block
+		position: relative
+		z-index: 1000
+		
+		
+
+
+
+	.ui-menu
+		max-width: 100%
+		.ui-menu-item
+			cursor: pointer
+				
+			.ui-menu-item-wrapper
+				padding: 10px 0px 8px 0px
+				border-bottom: 1px solid #E2E2E2
+				font-size: 19px
+				font-weight: 300
+				color: $black
+				margin: 0px 20px
+				transition: .3s
+				
+					
+				&.ui-state-active
+					transform: translateX(5px)
+					border: none
+					border-bottom: 1px solid #E2E2E2 !important
+
+
+.ui-datepicker
+	width: 218px
+	background: #FEFEFE
+	box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.35)
+	border-radius: 15px
+	padding: 10px
+	margin-top: 30px
+	margin-right: -50px
+	display: none
+
+	&-header
+		position: relative
+		text-align: center
+		padding: .7em 0em
+	&-prev
+		position: absolute
+		left: 0px
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 0px
+		width: 20px
+		height: 20px
+		
+		display: inline-block
+		&::before
+			position: absolute
+			content: ''
+			border: 10px solid transparent
+			border-right: 10px solid #C4C4C4
+			top: 0px
+			left: 0px
+			cursor: pointer
+
+	&-next
+		position: absolute
+		right: 0px
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 0px
+		width: 20px
+		height: 20px
+		display: inline-block
+		&::before
+			position: absolute
+			top: 0px
+			left: 0px
+			content: ''
+			border: 10px solid transparent
+			border-left: 10px solid #C4C4C4
+			cursor: pointer
+
+
+		
+
+	&-calendar
+		.ui-datepicker-unselectable
+			span
+				opacity: 0.5
+		margin: 0 auto
+		thead
+			
+
+			
+			tr
+				th
+					span
+						font-weight: 600
+						margin-bottom: 5px
+						display: inline-block
+
+		tbody
+			tr
+				td
+					
+					.ui-state-hover
+						background-color: $orange
+						transition: .2s
+					.ui-state-highlight
+						font-weight: 600
+						
+
+					a
+						width: 1.2em
+						display: inline-block
+						text-align: center
+						border-radius: 0.2em
+						padding: 0.2em 0em
+						transition: 0.2s
+
+
+
+
+@media screen and ( max-width: 425px )
+	.stocks .sorting .date::before
+		left: 10px
+	.stocks .sorting .date-submit
+		right: 10px
+	.select-row
+		flex-direction: column
+		align-items: center
+	
+
+

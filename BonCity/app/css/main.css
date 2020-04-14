@@ -176,7 +176,7 @@
 }
 
 .header .bot-block_description span {
-  color: #FCA53F;
+  color: #FFB72C;
   text-transform: uppercase;
 }
 
@@ -227,7 +227,7 @@
 }
 
 .what-is-it_title span {
-  color: #FCA53F;
+  color: #FFB72C;
 }
 
 .what-is-it_description {
@@ -316,7 +316,7 @@
 
 .saving_title span {
   text-transform: uppercase;
-  color: #FCA53F;
+  color: #FFB72C;
 }
 
 .saving_content {
@@ -363,7 +363,7 @@
   top: 87%;
   left: 65%;
   height: 44px;
-  color: #FCA53F;
+  color: #FFB72C;
   border-bottom: 2px solid #CBCBCB;
   text-align: center;
   font-size: 34px;
@@ -495,8 +495,12 @@
 
 .card_flag {
   position: absolute;
-  top: -10px;
+  top: -13px;
   right: 10px;
+  height: 69px;
+  width: 57px;
+  background: url(../img/flag.svg) no-repeat center;
+  background-size: contain;
   display: none;
 }
 
@@ -507,7 +511,7 @@
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   font-weight: bold;
   font-family: "inglobal", sans-serif;
@@ -551,7 +555,7 @@
   border-radius: 0px 0px 20px 20px;
   width: 100%;
   font-size: 50px;
-  color: #FCA53F;
+  color: #FFB72C;
   padding-bottom: 12px;
 }
 
@@ -578,7 +582,7 @@
 .card_rating svg {
   display: inline;
   width: 12px;
-  fill: #FCA53F;
+  fill: #FFB72C;
 }
 
 .card_rating_rating-tm span {
@@ -602,6 +606,14 @@
 
 .card_rating_detail svg {
   width: 22px;
+}
+
+.seller-top {
+  background: url(../img/svg_bg/seller-top_bg.svg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding-top: 250px;
+  margin-top: -290px;
 }
 
 .seller-top .btn-wrapper {
@@ -634,8 +646,9 @@
   min-height: 700px;
   position: relative;
   z-index: 150;
-  margin-top: -50px;
-  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: -150px;
+  padding-top: 50px;
 }
 
 .get-cashback h2 {
@@ -689,7 +702,7 @@
 }
 
 .partner {
-  background: #f3f3f3;
+  background: #FFE176;
   padding-top: 200px;
   margin-top: -200px;
   position: relative;
@@ -770,8 +783,8 @@
 .questions {
   padding-top: 50px;
   padding-bottom: 150px;
-  background: #f3f3f3;
-  margin-bottom: -180px;
+  background: url(../img/svg_bg/questions_bg.svg) no-repeat center top;
+  margin-top: -25px;
 }
 
 .questions_title {
@@ -868,7 +881,7 @@
 .get-cashback-bottom .bottom-social_social a {
   width: 60px;
   height: 60px;
-  border: 2px solid #FCA53F;
+  border: 2px solid #FFB72C;
   display: inline-block;
   border-radius: 100%;
   position: relative;
@@ -879,7 +892,7 @@
 }
 
 .get-cashback-bottom .bottom-social_social a:hover {
-  background: #FCA53F;
+  background: #FFB72C;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -896,14 +909,13 @@
 
 .get-cashback-bottom .bottom-social_social a svg {
   height: 35px;
-  color: #FCA53F;
+  color: #FFB72C;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
 }
 
 .footer {
-  background: #f3f3f3;
   padding-top: 270px;
   padding-bottom: 50px;
 }

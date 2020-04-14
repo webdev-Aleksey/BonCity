@@ -1,0 +1,106 @@
+.header {
+  background-color: #FFB72C;
+  min-height: 100px !important;
+}
+
+.contacts {
+  background: url(../img/svg_bg/contacts-bg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-block {
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contacts-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.contacts__item {
+  margin-bottom: 33px;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+
+.contacts__item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contacts .tel span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts .tel::before {
+  height: 30px;
+  width: 30px;
+  background-image: url(../img/svg/tel-icon.svg);
+}
+
+.contacts .address::before {
+  width: 30px;
+  height: 42px;
+  background-image: url(../img/svg/geo-position.svg);
+}
+
+.contacts .schedule::before {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/svg/time-icon.svg);
+}
+
+.contacts .schedule span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts .mail::before {
+  width: 30px;
+  height: 21px;
+  background-image: url(../img/svg/mail-icon.svg);
+}
+
+.contacts .whatsapp::before {
+  width: 30px;
+  height: 31px;
+  background-image: url(../img/svg/whatsapp-icon.svg);
+}
+
+.contacts .vk::before {
+  width: 30px;
+  height: 17px;
+  background-image: url(../img/svg/vk-icon.svg);
+}
+
+.contacts .skype::before {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/svg/skype-icon.svg);
+}
+
+.contacts .telegram::before {
+  width: 30px;
+  height: 26px;
+  background-image: url(../img/svg/telegram-icon.svg);
+}

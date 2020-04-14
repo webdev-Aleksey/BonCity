@@ -1,0 +1,35 @@
+@import 'vars'
+
+p
+    line-height: 1.7em
+
+ol
+    list-style: none
+    counter-reset: li
+    line-height: 1.7em
+
+    li
+        padding-bottom: 10px
+        padding-top: 10px
+        &::before
+            counter-increment: li
+            content: counters(li,".") ". "
+    
+    span
+        font-weight: 700
+
+a
+    color: $orange
+    text-decoration: underline
+
+
+@media screen and ( max-width: 768px )
+    ol
+        padding-left: 25px
+        
+@media screen and ( max-width: 425px )
+    ol
+        padding-left: 10px
+        
+
+    

@@ -8,18 +8,18 @@ const autoprefixer = require('gulp-autoprefixer');
 
 // Compile CSS from Sass.
 function buildStyles() {
-  return src('app/sass/**/*.sass')
+  return src('app/sass/*.sass')
     .pipe(sass({ outputStyle: 'expanded' }))   //expanded compressed
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
-    .pipe(dest('app/css/'))
-    .pipe(browsersync.reload({ stream: true }));
+    .pipe(dest('app/css/'));
+    // .pipe(browsersync.reload({ stream: true }));
 }
 
 // Watch changes on all *.scss files, lint them and
 // trigger buildStyles() at the end.
 function watchFiles() {
   watch(
-    ['app/sass/**/*.sass', 'app/**/.html' , 'app/js/*.js'],
+    ['app/sass/*.sass', 'app/*.html' , 'app/js/*.js'],
     { events: 'all', ignoreInitial: false },
     series(buildStyles, reload)
   );
@@ -33,8 +33,8 @@ function browserSync(done) {
   browsersync.init({
     server: { baseDir: "./app" }, // Change this value to match your local URL.
     socket: { domain: 'localhost:3000'},
-    host: "192.168.0.1"
-    // files: ["app/css/*.css", "app/js/*.js", "app/css/*.css"]
+  
+    
   });
   done();
 }

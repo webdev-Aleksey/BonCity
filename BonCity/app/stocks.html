@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="css/stocks.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Каталог акций</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="stocks">
+            <div class="container">
+
+                <h1 class="title">Акции</h1>
+
+                <div class="sorting">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-xl-3 d-flex justify-content-center">
+                            <div class="search my-input">
+
+                                <form action="">
+                                    <label for="search-store"></label>
+                                    <input type="text" id="search-store" class="search__input"
+                                        placeholder="Торговая точка">
+                                    <input type="submit" value="" class="search__btn">
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 col-xl-5 d-flex justify-content-around  justify-content-lg-center select-row">
+                            
+
+                                <div class="city-select my-input">
+                                    <fieldset>
+    
+                                        <form action="">
+                                            <label for="city">Город</label>
+    
+                                            <select id="city" name="city">
+                                                <option value="0" selected>Показать всё</option>
+                                                <option value="1">Донецк</option>
+                                                <option value="2">Макеевка</option>
+                                                <option value="3">Дебальцево</option>
+                                                <option value="4">Докучаевск</option>
+                                                <option value="5">Горловка</option>
+                                                <option value="6">Енакиево</option>
+                                                <option value="7">Иловайск</option>
+                                            </select>
+                                        </form>
+    
+                                    </fieldset>
+                                </div>
+    
+    
+                                <div class="category-select my-input">
+                                    <fieldset>
+    
+                                        <form action="">
+                                            <label for="category">Категория</label>
+    
+                                            <select  id="category" name="category">
+                                                
+                                                <option value="0" selected>Показать всё</option>
+                                                <option value="1" data-style="background-image: url('');">Продукты
+                                                </option>
+                                                <option value="2" data-style="background-image: url('');">Мода и стиль
+                                                </option>
+                                                <option value="3" data-style="background-image: url('');">Все для авто
+                                                </option>
+                                                <option value="4" data-style="background-image: url('');">Здоровье
+                                                </option>
+                                                <option value="5" data-style="background-image: url('');">Красота
+                                                </option>
+                                                <option value="6" data-style="background-image: url('');">Кафе и рестораны
+                                                </option>
+                                                <option value="7" data-style="background-image: url('');">Развлечение
+                                                </option>
+                                                <option value="8" data-style="background-image: url('');">Всё для детей
+                                                </option>
+                                                <option value="9" data-style="background-image: url('');">Электроника
+                                                </option>
+                                                <option value="10" data-style="background-image: url('');">Спорт и отдых
+                                                </option>
+                                                <option value="11" data-style="background-image: url('');">Все для дома
+                                                </option>
+                                                <option value="12" data-style="background-image: url('');">Все для животных
+                                                </option>
+                                                <option value="13" data-style="background-image: url('');">Перевозки
+                                                </option>
+                                                <option value="14" data-style="background-image: url('');">Информуслуги
+                                                </option>
+                                                <option value="15" data-style="background-image: url('');">Прочие тавары
+                                                </option>
+                                                <option value="16" data-style="background-image: url('');">Прочие услуги
+                                                </option>
+                                            </select>
+                                        </form>
+    
+                                    </fieldset>
+                                </div>
+
+                           
+                        
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 d-flex justify-content-center">
+                            <div class="date my-input">
+                                <div class="clear-date d-none"></div>
+                                <fieldset>
+                                    <form action="">
+                                        <input type="text" placeholder="От" readonly  autocomplete="off"
+                                            class="date-from" id="datepicker-from">
+                                        <input type="text" placeholder="До" readonly  autocomplete="off" class="date-to"
+                                            id="datepicker-to">
+                                        <button type="submit" class="date-submit"></button>
+                                    </form>
+
+                                </fieldset>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="cards-row my-scrollbar">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/tm-img.png" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/123" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/tm-img.png" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/1234.jpg" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/tm-img.png" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/tm-img.png" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-xl-4 col-md-6 ">
+                            <div class="card">
+                                <span class="card__tagline">Каждому по коляске от Авоськи</span>
+                                <div class="card__img"><img src="img/tm-img.png" alt=""></div>
+                               
+                                <div class="card__date">
+                                    <div class="card__from d-flex justify-content-between">
+                                        <span class="card__from__title">Дата начала акции:</span>
+                                        <span class="card__from__date">21.02.2020</span>
+                                    </div>
+                                    <div class="card__to d-flex justify-content-between">
+                                        <span class="card__to__title">Дата окончания акции:</span>
+                                        <span class="card__to__date">21.12.2020</span>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adi pisci ng elit, sed dododr
+                                        dodoeiusmod cinfw efs аco nsectetur adipiscing elitаconsec teturdoadip isci
+                                    </p>
+                                </div>
+                                <div class="card__tm-title">
+                                    <p>Торговая сеть <span>Авоська</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                       
+
+                        
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+
+    <script src="js/smooth-scrollbar.js"></script>
+
+    <script src="js/libs/jquery-ui.min.js">
+    </script>
+
+    <script src="js/stocks.js"></script>
+
+    <script>
+        var Scrollbar = window.Scrollbar;
+
+        Scrollbar.init(document.querySelector('.my-scrollbar'), {
+            alwaysShowTracks: false
+        });
+
+       
+
+    </script>
+
+
+
+</body>
+
+</html>
