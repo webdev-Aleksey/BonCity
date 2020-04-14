@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Comfortaa-Bold';
+  src: url('../fonts/Comfortaa-Bold.eot');
+  src: url('../fonts/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Comfortaa-Bold.svg#Comfortaa-Bold') format('svg'),
+       url('../fonts/Comfortaa-Bold.ttf') format('truetype'),
+       url('../fonts/Comfortaa-Bold.woff') format('woff'),
+       url('../fonts/Comfortaa-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+       url('../fonts/Roboto-Regular.ttf') format('truetype'),
+       url('../fonts/Roboto-Regular.woff') format('woff'),
+       url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

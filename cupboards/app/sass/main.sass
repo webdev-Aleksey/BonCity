@@ -1,0 +1,264 @@
+@import 'vars'
+@import "../css/font"
+@import "../../node_modules/normalize.css/normalize"
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid"
+
+
+
+.price
+    display: block
+
+.calc
+    font-family: $main-font
+    padding-bottom: 50px
+    color: #222
+
+    .border
+        border: 1px solid $grey
+
+
+    .title
+        font-family: $title-font
+        font-size: 50px
+        text-align: center
+
+    .cupboards-options
+        padding: 15px
+        font-size: 18px
+       
+
+        select
+            width: 100%
+            appearance: none
+            cursor: pointer
+            padding: 1em
+            outline: none
+            color: $grey
+            display: flex
+            flex-direction: row
+            
+            option
+                color: $grey
+                
+
+                
+
+        &__type
+            position: relative
+            margin-bottom: 30px
+            
+            
+
+        &__width
+            margin-bottom: 30px
+            select
+                display: none
+                
+                
+            
+
+        &__facade-type
+
+            max-height: 485px
+            overflow-y: scroll
+            &::-webkit-scrollbar
+                width: 0px
+            
+
+            
+            
+            
+            h3
+                display: block
+                padding: 0.5em 0em 0.5em 1em
+                
+                font-size: 18px
+                margin: 0
+                font-weight: normal
+                color: $grey
+
+            .facade-item
+                width: 94px
+                margin: 0 auto
+                overflow: hidden
+                color: $blue
+                font-weight: bold
+                padding: 5px
+                font-size: 12px
+                cursor: pointer
+                &.bacground
+                    // background-color: $gray
+                img
+                    max-width: 100%
+                    height: 112px
+                label
+                    display: block
+                    position: relative
+                    padding: 5px 0px 5px 12px
+                    cursor: pointer
+                    white-space: nowrap
+                input[type=radio]
+                    width: 0px
+                    height: 0px
+                    opacity: 0
+                   
+                    &:checked ~ .checkmark
+                        background-color: $blue
+                        transition: 0.2
+                        
+                .checkmark
+                    position: absolute
+                    top: 50%
+                    left: 0px
+                    transform: translateY(-50%)
+                    height: 8px
+                    width: 8px
+                    transition: 0.2
+                    // border: 1px solid $blue
+
+                    
+
+
+                &-wrapper
+                    display: flex
+                    flex-wrap: wrap
+                    max-height: 445px
+                    overflow-y: scroll
+                    &::-webkit-scrollbar
+                        width: 0px
+
+    .cupboards-selected
+        font-family: $title-font
+        &__width
+            font-size: 18px
+            margin-bottom: 50px
+        &__title
+            margin-top: 15px
+            font-size: 25px
+            margin-bottom: 28px
+        &__type
+            margin-bottom: 10px
+            display: block
+            font-size: 18px
+        &__img
+            img
+                max-width: 100%
+                display: block
+                margin: 0 auto
+                display: none
+
+    .cupboards-order
+        
+        &__title
+            font-size: 40px
+            font-family: $title-font
+            text-align: center
+            margin-top: 15px
+        &__amount
+            display: inline-block
+            font-size: 52px
+            font-family: $title-font
+            color: $blue
+            line-height: 30px
+            margin-right: 10px
+
+        
+        &__currency
+            display: inline-block
+            font-size: 18px
+            font-family: $main-font
+            color: $blue
+        
+        &__form
+           
+            padding: 32px
+            margin-top: 50px
+           
+
+            .form
+            
+                input
+                    width: 100%
+                    margin-bottom: 50px
+                    outline: none
+                &__title
+                    text-align: center
+                    display: block
+                    margin-bottom: 73px
+
+
+                &__tel
+                    font-size: 18px
+                    font-family: $main-font
+                    color: $grey
+                    padding: 1em
+
+                &__name
+                    font-size: 18px
+                    font-family: $main-font
+                    color: $grey
+                    padding: 1em
+
+                &__submit
+                    background-color: $blue
+                    color: #fff
+                    border: none
+                    font-size: 18px
+                    padding: 1em
+                    cursor: pointer
+
+                
+
+@media screen and ( max-width: 1440px )
+    .calc
+        .title
+            font-size: 40px
+            margin-bottom: 15px
+            margin-top: 0px
+        .cupboards-options 
+            &__width
+                margin-bottom: 15px
+            select
+                font-size: 14px
+            &__type
+                margin-bottom: 15px
+                    
+            &__facade-type
+                max-height: 445px
+                .facade-item
+                    label
+                        padding: 0px 0px 0px 12px
+                        line-height: 17px !important
+                        margin-bottom: 0px
+                h3
+                    font-size: 14px
+        .cupboards-selected
+            &__title
+                margin-bottom: 18px
+            &__width
+                margin-bottom: 20px
+        .cupboards-order
+            &__title
+                font-size: 32px
+            &__form
+                margin-top: 25px
+                padding-bottom: 0px
+
+                .form
+                    input
+                        margin-bottom: 44px
+                    &__title
+                       
+    
+
+
+@media screen and ( max-width: 767px )
+    .calc
+        .cupboards-selected
+            text-align: center
+            &__img
+                img
+                    max-width: 350px
+                    margin: 0 auto
+                    width: 100%
+    
