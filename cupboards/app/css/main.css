@@ -4967,7 +4967,7 @@ html {
   margin-bottom: 30px;
 }
 
-.calc .cupboards-options__width select {
+.calc .cupboards-options__width select#cupboardsWidth3 {
   display: none;
 }
 

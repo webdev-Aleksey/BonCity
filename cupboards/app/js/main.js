@@ -5,7 +5,7 @@ $(document).ready(function () {
             $('#threeDors').css("display", "none");
             $('.cupboards-selected__type').empty();
             $('.cupboards-selected__type').html('2-x дверный');
-            $('.cupboards-selected__type').html('2-x дверный');
+            
 
         }
         else {
