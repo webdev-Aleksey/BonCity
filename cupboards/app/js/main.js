@@ -2,27 +2,36 @@ $(document).ready(function () {
     $('#cupboardsType').change(function () {
         if ($(this).val() === "двухдверный") {
             $("#cupboardsWidth2").css("display", "block");
+            $("#tooDors").css("display", "flex");
             $('#threeDors').css("display", "none");
             $('.cupboards-selected__type').empty();
             $('.cupboards-selected__type').html('2-x дверный');
+            $("#cupboardsWidth3").css("display", "none");
+            $('.cupboards-options__width').removeClass('blocked');
             
 
         }
         else {
-            $("#cupboardsWidth2").css("display", "none");
+            // $("#cupboardsWidth2").css("display", "none");
             $('#threeDors').css("display", "flex");
             $('.cupboards-selected__type').html('Количество дверей');
         }
 
         if ($(this).val() === "трехдверный") {
+            $("#cupboardsWidth2").css("display", "none");
             $("#cupboardsWidth3").css("display", "block");
             $("#tooDors").css("display", "none");
             $('.cupboards-selected__type').empty();
             $('.cupboards-selected__type').html('3-x дверный');
+            $('.cupboards-options__width').removeClass('blocked');
+        }
+
+        if ($(this).val() === "") {
+          $('.cupboards-options__width').addClass('blocked');
         }
         else {
-            $("#cupboardsWidth3").css("display", "none");
-            $("#tooDors").css("display", "flex");
+            // $("#cupboardsWidth3").css("display", "none");
+            // $("#tooDors").css("display", "flex");
             
         }
 

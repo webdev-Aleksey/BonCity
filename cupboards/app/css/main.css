@@ -4965,10 +4965,31 @@ html {
 
 .calc .cupboards-options__width {
   margin-bottom: 30px;
+  position: relative;
+}
+
+.calc .cupboards-options__width.blocked::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: block;
+  right: 0px;
+  bottom: 0px;
 }
 
 .calc .cupboards-options__width select#cupboardsWidth3 {
   display: none;
+}
+
+.calc .cupboards-options__width select {
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 
 .calc .cupboards-options__facade-type {
