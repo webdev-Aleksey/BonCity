@@ -29,11 +29,11 @@ $(document).ready(function () {
         if ($(this).val() === "") {
           $('.cupboards-options__width').addClass('blocked');
         }
-        else {
-            // $("#cupboardsWidth3").css("display", "none");
-            // $("#tooDors").css("display", "flex");
+        // else {
+        //     $("#cupboardsWidth3").css("display", "none");
+        //     $("#tooDors").css("display", "flex");
             
-        }
+        // }
 
 
     });
