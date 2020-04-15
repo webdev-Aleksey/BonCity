@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-
-<body>
+<link rel="stylesheet" href="<?php echo site_url();?>/wp-content/themes/modus/template-parts/css/main.css">
 
     <div class="calc">
         <div class="container">
-            <h2 class="title">Какой шкаф вам нужен?</h2>
+            
             <div class="row">
                 <div class="col-lg-4 col-md-6">
 
@@ -23,7 +11,7 @@
 
                             <!-- Выбор типа шкафа -->
                             <div class="cupboards-options__type">
-                                <select name="type" id="cupboardsType">
+                                <select name="tp" id="cupboardsType">
                                     <option label="Выберите тип шкафа"></option>
                                     <option value="двухдверный">двухдверный</option>
                                     <option value="трехдверный">трехдверный</option>
@@ -59,11 +47,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/orhidea2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/orhidea2.jpg" alt="cupboard">
                                         </div>
                                         <label for="orhidea2">Орхидея
                                             
-                                            <input id="orhidea2" name="type" type="radio" value="orhidea2">
+                                            <input id="orhidea2" name="tp" type="radio" value="orhidea2">
 
                                             <span class="checkmark"></span>
 
@@ -73,12 +61,12 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/gorod2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/gorod2.jpg" alt="cupboard">
                                         </div>
                                         
                                         <label for="gorod2">Город
 
-                                            <input id="gorod2" name="type" type="radio" value="gorod2">
+                                            <input id="gorod2" name="tp" type="radio" value="gorod2">
 
                                             <span class="checkmark"></span>
 
@@ -88,12 +76,12 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/london2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/london2.jpg" alt="cupboard">
                                         </div>
                                         
                                         <label for="london2">Лондон
 
-                                            <input id="london2" type="radio" name="type" value="london2">
+                                            <input id="london2" type="radio" name="tp" value="london2">
 
                                             <span class="checkmark"></span>
 
@@ -103,11 +91,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/paris2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/paris2.jpg" alt="cupboard">
                                         </div>
                                         <label for="paris2">Париж
                                             
-                                            <input id="paris2" name="type" type="radio" value="paris2">
+                                            <input id="paris2" name="tp" type="radio" value="paris2">
 
                                             <span class="checkmark"></span>
 
@@ -118,12 +106,12 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/peskostruj2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/peskostruj2.jpg" alt="cupboard">
                                         </div>
 
                                         <label for="peskostruj2">Пескоструй
                                             
-                                            <input id="peskostruj2" name="type" type="radio" value="peskostruj2">
+                                            <input id="peskostruj2" name="tp" type="radio" value="peskostruj2">
 
                                             <span class="checkmark"></span>
 
@@ -133,11 +121,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/mirror2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror2.jpg" alt="cupboard">
                                         </div>
                                         <label for="mirror2">Зеркала
                                             
-                                            <input id="mirror2" name="type" type="radio" value="mirror2">
+                                            <input id="mirror2" name="tp" type="radio" value="mirror2">
 
                                             <span class="checkmark"></span>
 
@@ -148,11 +136,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/mirror-dsp-2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror-dsp-2.jpg" alt="cupboard">
                                         </div>
                                         <label for="mirrorDsp2">Зеркала/ДСП
                                             
-                                            <input id="mirrorDsp2" name="type" type="radio" value="mirrorDsp2">
+                                            <input id="mirrorDsp2" name="tp" type="radio" value="mirrorDsp2">
 
                                             <span class="checkmark"></span>
 
@@ -162,7 +150,7 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/dsp2.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/dsp2.jpg" alt="cupboard">
                                         </div>
                                         
 
@@ -170,7 +158,7 @@
 
                                         <label for="dsp2">ДСП/ДСП
                                             
-                                            <input id="dsp2" name="type" type="radio" value="dsp2">
+                                            <input id="dsp2" name="tp" type="radio" value="dsp2">
 
                                             <span class="checkmark"></span>
 
@@ -203,11 +191,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/orhidea3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/orhidea3.jpg" alt="cupboard">
                                         </div>
                                         <label for="orhidea3">Орхидея
                                             
-                                            <input id="orhidea3" name="type" type="radio" value="orhidea3">
+                                            <input id="orhidea3" name="tp" type="radio" value="orhidea3">
 
                                             <span class="checkmark"></span>
 
@@ -217,12 +205,12 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/gorod3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/gorod3.jpg" alt="cupboard">
                                         </div>
                                         
                                         <label for="gorod3">Город
 
-                                            <input id="gorod3" name="type" type="radio" value="gorod3">
+                                            <input id="gorod3" name="tp" type="radio" value="gorod3">
 
                                             <span class="checkmark"></span>
 
@@ -232,12 +220,12 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/london3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/london3.jpg" alt="cupboard">
                                         </div>
                                         
                                         <label for="london3">Лондон
 
-                                            <input id="london3" type="radio" name="type" value="london3">
+                                            <input id="london3" type="radio" name="tp" value="london3">
 
                                             <span class="checkmark"></span>
 
@@ -247,11 +235,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/paris3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/paris3.jpg" alt="cupboard">
                                         </div>
                                         <label for="paris3">Париж
                                             
-                                            <input id="paris3" name="type" type="radio" value="paris3">
+                                            <input id="paris3" name="tp" type="radio" value="paris3">
 
                                             <span class="checkmark"></span>
 
@@ -262,12 +250,12 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/peskostruj3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/peskostruj3.jpg" alt="cupboard">
                                         </div>
 
                                         <label for="peskostruj3">Пескоструй
                                             
-                                            <input id="peskostruj3" name="type" type="radio" value="peskostruj3">
+                                            <input id="peskostruj3" name="tp" type="radio" value="peskostruj3">
 
                                             <span class="checkmark"></span>
 
@@ -277,11 +265,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/mirror3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror3.jpg" alt="cupboard">
                                         </div>
                                         <label for="mirror3">Зеркала
                                             
-                                            <input id="mirror3" name="type" type="radio" value="mirror3">
+                                            <input id="mirror3" name="tp" type="radio" value="mirror3">
 
                                             <span class="checkmark"></span>
 
@@ -292,11 +280,11 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/mirror-dsp-3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror-dsp-3.jpg" alt="cupboard">
                                         </div>
                                         <label for="mirrorDsp3">Зеркала/ДСП
                                             
-                                            <input id="mirrorDsp3" name="type" type="radio" value="mirrorDsp3">
+                                            <input id="mirrorDsp3" name="tp" type="radio" value="mirrorDsp3">
 
                                             <span class="checkmark"></span>
 
@@ -306,7 +294,7 @@
 
                                     <div class="facade-item">
                                         <div class="facade-item__img">
-                                            <img src="img/dsp3.jpg" alt="cupboard">
+                                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/dsp3.jpg" alt="cupboard">
                                         </div>
                                         
 
@@ -314,7 +302,7 @@
 
                                         <label for="dsp3">ДСП/ДСП
                                             
-                                            <input id="dsp3" name="type" type="radio" value="dsp3">
+                                            <input id="dsp3" name="tp" type="radio" value="dsp3">
 
                                             <span class="checkmark"></span>
 
@@ -329,7 +317,7 @@
                                         </div>
                                         
                                         <label for="dsp3">название
-                                            <input id="dsp3" name="type" type="radio" value="dsp3">
+                                            <input id="dsp3" name="tp" type="radio" value="dsp3">
                                             <span class="checkmark"></span>
     
                                         </label>
@@ -343,7 +331,7 @@
                                         
                                         <label for="gorod3">название
     
-                                            <input id="gorod3" name="type" type="radio" value="gorod3">
+                                            <input id="gorod3" name="tp" type="radio" value="gorod3">
     
                                             <span class="checkmark"></span>
     
@@ -358,7 +346,7 @@
                                         
                                         <label for="london3">название
     
-                                            <input id="london3" type="radio" name="type" value="london3">
+                                            <input id="london3" type="radio" name="tp" value="london3">
     
                                             <span class="checkmark"></span>
     
@@ -371,7 +359,7 @@
                                         </div>
                                         <label for="mirror3">название
                                             
-                                            <input id="mirror3" name="type" type="radio" value="mirror3">
+                                            <input id="mirror3" name="tp" type="radio" value="mirror3">
     
                                             <span class="checkmark"></span>
     
@@ -386,7 +374,7 @@
                                         </div>
                                         <label for="mirrorDsp3">название
                                             
-                                            <input id="mirrorDsp3" name="type" type="radio" value="mirrorDsp3">
+                                            <input id="mirrorDsp3" name="tp" type="radio" value="mirrorDsp3">
     
                                             <span class="checkmark"></span>
     
@@ -400,7 +388,7 @@
                                         </div>
                                         <label for="orhidea3">название
                                             
-                                            <input id="orhidea3" name="type" type="radio" value="orhidea3">
+                                            <input id="orhidea3" name="tp" type="radio" value="orhidea3">
     
                                             <span class="checkmark"></span>
     
@@ -414,7 +402,7 @@
                                         </div>
                                         <label for="paris3">название
                                             
-                                            <input id="paris3" name="type" type="radio" value="paris3">
+                                            <input id="paris3" name="tp" type="radio" value="paris3">
     
                                             <span class="checkmark"></span>
     
@@ -429,7 +417,7 @@
     
                                         <label for="peskostruj3">название
                                             
-                                            <input id="peskostruj3" name="type" type="radio" value="peskostruj3">
+                                            <input id="peskostruj3" name="tp" type="radio" value="peskostruj3">
     
                                             <span class="checkmark"></span>
     
@@ -468,22 +456,22 @@
                         </div>
 
                         <div class="cupboards-selected__img">
-                            <img src="img/dsp2.jpg" alt="" data-img="dsp2">
-                            <img src="img/dsp3.jpg" alt="" data-img="dsp3">
-                            <img src="img/gorod2.jpg" alt="" data-img="gorod2">
-                            <img src="img/gorod3.jpg" alt="" data-img="gorod3">
-                            <img src="img/london2.jpg" alt="" data-img="london2">
-                            <img src="img/london3.jpg" alt="" data-img="london3">
-                            <img src="img/mirror2.jpg" alt="" data-img="mirror2">
-                            <img src="img/mirror3.jpg" alt="" data-img="mirror3">
-                            <img src="img/mirror-dsp-2.jpg" alt="" data-img="mirrorDsp2">
-                            <img src="img/mirror-dsp-3.jpg" alt="" data-img="mirrorDsp3">
-                            <img src="img/orhidea2.jpg" alt="" data-img="orhidea2">
-                            <img src="img/orhidea3.jpg" alt="" data-img="orhidea3">
-                            <img src="img/paris2.jpg" alt="" data-img="paris2">
-                            <img src="img/paris3.jpg" alt="" data-img="paris3">
-                            <img src="img/peskostruj2.jpg" alt="" data-img="peskostruj2">
-                            <img src="img/peskostruj3.jpg" alt="" data-img="peskostruj3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/dsp2.jpg" alt="" data-img="dsp2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/dsp3.jpg" alt="" data-img="dsp3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/gorod2.jpg" alt="" data-img="gorod2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/gorod3.jpg" alt="" data-img="gorod3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/london2.jpg" alt="" data-img="london2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/london3.jpg" alt="" data-img="london3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror2.jpg" alt="" data-img="mirror2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror3.jpg" alt="" data-img="mirror3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror-dsp-2.jpg" alt="" data-img="mirrorDsp2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/mirror-dsp-3.jpg" alt="" data-img="mirrorDsp3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/orhidea2.jpg" alt="" data-img="orhidea2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/orhidea3.jpg" alt="" data-img="orhidea3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/paris2.jpg" alt="" data-img="paris2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/paris3.jpg" alt="" data-img="paris3">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/peskostruj2.jpg" alt="" data-img="peskostruj2">
+                            <img src="<?php echo site_url();?>/wp-content/themes/modus/template-parts/img/peskostruj3.jpg" alt="" data-img="peskostruj3">
                             
                         </div>
 
@@ -531,9 +519,6 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    
 
 </body>
-
-</html>
